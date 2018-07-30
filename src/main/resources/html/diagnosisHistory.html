@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>测试</title>
+    <link href="static/css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="static/css/other/font-awesome.min.css" rel="stylesheet"/>
+    <link href="static/css/other/animate.min.css" rel="stylesheet"/>
+    <link href="static/css/other/style.min.css?v=4.1.0" rel="stylesheet"/>
+    <link href="static/css/plugins/iCheck/custom.css" rel="stylesheet"/>
+    <link href="static/css/bootstrap/bootstrap-table.min.css" rel="stylesheet"/>
+    <link href="static/css/bootstrap/bootstrap-select.min.css" rel="stylesheet"/>
+    <link href="static/css/plugins/sweetalert/sweetalert.css" rel="stylesheet"/>
+    <link href="static/css/select.css" rel="stylesheet"/>
+    <script src="../static/js/test/test.js"></script>
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>诊断历史</h5>
+                </div>
+                <div class="ibox-content">
+                    <!-- 查询工具栏 -->
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <select id="chargingStationID" name="chargingStationID" class="selectpicker" data-live-search="true" title="充电站" onchange="change('#chargingStationID','#DiagnosisHistoryID',getDiagnosisHistoryName)">
+                            </select>
+                        </div>
+                        <div id="DiagnosisHistoryIDDiv" class="form-group" hidden="hidden">
+                            <select id="DiagnosisHistoryID" name="DiagnosisHistoryID" class="selectpicker" data-live-search="true" title="充电桩" hidden="hidden">
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm" onclick="search()" >
+                            <img src="static/images/search_btn.png" height="16" width="16"/> 查询
+                        </button>
+                        <button type="button" class="btn btn-sm" onclick="searchReset()" >
+                            <img src="static/images/reset_btn.png" height="16" width="16"/> 重置
+                        </button>
+                    </div>
+                    <hr/>
+
+                    <table id="diagnosisHistoryTable"></table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="static/js/jquery/jquery.min.js"></script>
+
+<script src="static/js/bootstrap/bootstrap.min.js"></script>
+<script src="static/js/bootstrap/bootstrap-table.js"></script>
+<script src="static/js/bootstrap/bootstrap-table-zh-CN.min.js"></script>
+<script src="static/js/bootstrap/bootstrap-select.min.js"></script>
+
+<script src="static/js/plugins/iCheck/icheck.min.js"></script>
+<script src="static/js/plugins/layer/laydate/laydate.js"></script>
+<script src="static/js/plugins/layer/layer.min.js"></script>
+<script src="static/js/plugins/sweetalert/sweetalert.min.js"></script>
+<script src="static/js/plugins/sweetalert/sweetalert-dev.js"></script>
+
+<script src="static/js/other/content.min.js?v=1.0.0"></script>
+<script src="static/js/other/contabs.min.js"></script>
+
+<script src="static/js/common.js"></script>
+<script src="static/js/diagnosisHistory/diagnosisHistory.js"></script>
+<script src="static/js/diagnosisHistory/diagnosisHistoryOperate.js"></script>
+<script src="static/js/messageContent.js"></script>
+
+</body>
+
+</html>
