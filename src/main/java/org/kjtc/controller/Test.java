@@ -13,6 +13,7 @@ public class Test {
 
     @RequestMapping(value = "/test")
     public String equipmentPage(){
+
         return "diagnosisHistory";
     }
 
