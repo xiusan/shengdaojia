@@ -1,7 +1,7 @@
 ﻿###########商品表
 DROP TABLE IF EXISTS `commodity_table`;
 CREATE TABLE `commodity_table` (
-  `num_iid` varchar(32) NOT NULL COMMENT '商品ID',
+  `num_id` varchar(32) NOT NULL COMMENT '商品ID',
   `title` varchar(32) DEFAULT NULL COMMENT '商品标题',
   `pict_url` varchar(64) DEFAULT NULL COMMENT '商品主图',
   `small_images` varchar(64) DEFAULT NULL COMMENT '商品小图列表',
