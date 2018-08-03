@@ -34,6 +34,11 @@ public class IndexController {
         return "index";
     }
 
+    @RequestMapping("/indexcp")
+    public String indexcp(){
+        return "indexcp";
+    }
+
     /**
      *
      * @Description: geEquipmentList
