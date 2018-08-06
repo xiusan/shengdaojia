@@ -1,0 +1,64 @@
+/*菜单*/
+.menu{
+  font-family:arial,sans-serif;
+  /*width:750px;这里的宽度设置并不是必须的*/
+  padding:0;
+}
+.menu ul{
+  padding:0;
+  margin:0;
+  /*ul和ol、li都有list-style-type属性，*/
+  list-style-type:none;
+  background: #004B96;
+}
+.menu ul li{
+  /*float属性定义元素在哪个方向浮动，浮动元素会生成一个块级框。如果浮动非替换元素，则要
+  指明一个明确的宽度，否则会被尽可能的压缩。*/
+  float:left;
+  position:relative;
+  list-style-type:none;
+}
+.menu ul li a, .menu ul li a:visited{
+  /*display的值，none表示不被显示；block表示显示为块级元素，元素前后
+  有换行符；inline为默认值，内联元素，前后没有换行符……*/
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  width:104px;
+  height:30px;
+  color:#000;
+  border-width:1px solid #fff;
+  background: #004B96;
+  line-height:30px;
+  font-size:11px;
+}
+/*鼠标无动作时不显示*/
+.menu ul li ul{
+  display:none;
+}
+/*当鼠标指向第一级li时，第二级ul的动作*/
+.menu ul li:hover ul{
+  display:block;
+  position:absolute;
+  top:30px;
+  left:0;
+  width:105px;
+
+}
+.menu ul li:active {
+  background-color:yellow;
+
+}
+.menu ul li:hover ul li a{
+  display:block;
+  background: #004B96;
+  color:#000;
+}
+.menu ul li:hover ul li a:hover{
+  background: #004B96;
+  color:#000;
+}
+/*clear属性定义了元素的哪边上不允许出现浮动元素。*/
+.clear{
+  clear:both;
+}
